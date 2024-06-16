@@ -1,4 +1,4 @@
-name: init
+name: Init Environment
 on: [push]
 
 jobs:
