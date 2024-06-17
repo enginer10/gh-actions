@@ -7,6 +7,27 @@ on:
         type: string
         required: true
         default: "Default Value"
+      number:
+        description: A number input
+        default: 4
+        type: number
+      option:
+        description: "An Options Input"
+        required: true
+        default: "Option 3"
+        type: choice
+        options:
+          - Option 1
+          - Option 2
+          - Option 3
+      boolean:
+        description: A boolean option
+        required: false
+        type: boolean
+      environment:
+        description: "Environment"
+        type: environment
+        required: true
 
 jobs:
   log-info:
