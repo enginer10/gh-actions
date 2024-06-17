@@ -1,8 +1,19 @@
 name: Repository Events
 on:
   push:
+    branches: 
+      - main
+      - "feature/*"
+      - "feature/**"
+    tags: 
+      - v1.*
+    paths: 
+      - "**.js"
+      - "!app.js"
+
   pull_request: 
     types: [opened, assigned, reopened, synchronize]
+
   issues: 
     types: [opened]
 
