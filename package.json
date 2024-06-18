@@ -4,7 +4,7 @@
   "description": "[![init](https://github.com/enginer10/gh-actions/actions/workflows/init.yaml/badge.svg?branch=main&event=push)](https://github.com/enginer10/gh-actions/actions/workflows/init.yaml)",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --coverage"
   },
   "keywords": [],
   "author": "",
