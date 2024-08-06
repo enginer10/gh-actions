@@ -1,0 +1,13 @@
+name: Hello Workflow
+on: 
+  workflow_dispatch: 
+
+jobs:
+  echo-variable:
+    runs-on:
+      group: Development
+      labels: [self-hosted-runner-development]
+    environment: "Development"
+    steps:
+      - name: print-org-var
+        run: echo ${{ SECRETS.DB_NAME }}
